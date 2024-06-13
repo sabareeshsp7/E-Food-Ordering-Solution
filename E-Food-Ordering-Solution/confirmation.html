@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        #confirmation-message {
+            display: none;
+            background-color: #4caf50;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+        #CancelOrder {
+            display: none;
+            background-color: red;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style >
+</head>
+<body>
+    
+    <h1>Order Confirmation Page</h1>
+    <hr>
+    <center><button onclick="placeOrder()">Do You Want To Confirm Your Order</button></Center>
+
+    <div id="confirmation-message">
+        <h1>Order placed successfully! <br> Thank you for your purchase.</h1>
+    </div>
+
+    <script>
+        function placeOrder() {
+            document.getElementById('confirmation-message').style.display = 'block';
+        }
+
+
+    </script>
+</body>
+</html>
